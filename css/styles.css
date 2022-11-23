@@ -13,6 +13,9 @@
   --title-text-color: #757575;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --bg-color: #2f303a;
+  --bg-color-white: #f5f4fa;
+  --border-color-white: #ececec;
 }
 
 /* цвет основного текста - #212121; */
@@ -35,11 +38,11 @@ body {
 
 header {
   background-color: var(--primary-white-color);
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-color-white);
 }
 
 footer {
-  background-color: #2f303a;
+  background-color: var(--bg-color);
 }
 
 .section {
@@ -73,7 +76,7 @@ ul {
   width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-color-white);
 }
 
 .nav-box {
@@ -210,7 +213,7 @@ ul {
 /* <!-- background:banner/picture/video? --> */
 
 .hero-bg {
-  background-color: #2f303a;
+  background-color: var(--bg-color);
 }
 
 .hero {
@@ -222,7 +225,7 @@ ul {
 }
 
 .banner-box {
-  background-color: #2f303a;
+  background-color: var(--bg-color);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -350,7 +353,7 @@ ul {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .modal-container {
@@ -581,7 +584,7 @@ ul {
   align-items: center;
   justify-content: center;
   height: 120px;
-  background: #f5f4fa;
+  background: var(--bg-color-white);
   border-radius: 4px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -673,7 +676,7 @@ ul {
 /* <!-- our team --> */
 
 .team-bg {
-  background-color: #f5f4fa;
+  background-color: var(--bg-color-white);
 }
 
 .team-title {
@@ -814,7 +817,7 @@ ul {
   width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #2f303a;
+  background-color: var(--bg-color);
   display: flex;
   align-items: center;
 }
@@ -970,7 +973,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   width: 358px;
   height: 50px;
-  background: #2f303a;
+  background: var(--bg-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -1038,7 +1041,7 @@ ul {
 
 .button-navigation {
   cursor: pointer;
-  background-color: #f5f4fa;
+  background-color: var(--bg-color-white);
   color: var(--primary-text-color);
   border: transparent;
   font-weight: 500;
