@@ -222,7 +222,7 @@ ul {
   margin-left: auto;
 }
 
-.banner-box {
+.hero-block {
   background-color: var(--bg-color);
   background-image: linear-gradient(
       to right,
@@ -243,7 +243,7 @@ ul {
   align-items: center;
 }
 
-.banner-title {
+.hero-block__title {
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -257,7 +257,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.banner-button {
+.hero-block__button {
   width: 216px;
   text-align: center;
   border-radius: 4px;
