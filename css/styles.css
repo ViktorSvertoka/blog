@@ -894,12 +894,12 @@ ul {
 
 /* join-in */
 
-.join-in-box {
+.join-in {
   margin-top: 72px;
   margin-right: 93px;
 }
 
-.join-in-title {
+.join-in__title {
   color: var(--primary-white-color);
   text-decoration: none;
   text-align: left;
@@ -912,12 +912,12 @@ ul {
   text-transform: uppercase;
 }
 
-.join-in-list {
+.join-in__list {
   display: flex;
   justify-content: center;
 }
 
-.join-in-button {
+.join-in__link {
   padding: 0;
   border: none;
   width: 44px;
@@ -932,13 +932,13 @@ ul {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join-in-button:hover,
-.join-in-button:focus {
+.join-in__link:hover,
+.join-in__link:focus {
   background: var(--accent-color);
   fill: var(--primary-white-color);
 }
 
-.join-in-link {
+.join-in__icon {
   background-position: center;
   fill: var(--primary-white-color);
   margin: 0;
@@ -946,6 +946,8 @@ ul {
   width: 20px;
   height: 20px;
 }
+
+/* підпишіться на розсилку */
 
 .subscribe-box {
   margin-top: 72px;
