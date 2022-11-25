@@ -321,7 +321,7 @@ ul {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__button-close:hover {
+.modal__button-close--active:hover {
   fill: var(--accent-color);
 }
 
@@ -367,7 +367,7 @@ ul {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form__type-field:focus {
+.modal-form__type-field--active:focus {
   border-color: var(--accent-color);
 }
 
@@ -386,7 +386,7 @@ ul {
   position: absolute;
 }
 
-.modal-form__field-name:focus-within > .modal-form__icon-name {
+.modal-form__field-name--active:focus-within > .modal-form__icon-name {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -406,7 +406,7 @@ ul {
   position: absolute;
 }
 
-.modal-form__field-tel:focus-within > .modal-form__icon-tel {
+.modal-form__field-tel--active:focus-within > .modal-form__icon-tel {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -426,7 +426,7 @@ ul {
   position: absolute;
 }
 
-.modal-form__field-email:focus-within > .modal-form__icon-email {
+.modal-form__field-email--active:focus-within > .modal-form__icon-email {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -456,7 +456,7 @@ ul {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-container__text:focus-within {
+.modal-container__text--active:focus-within {
   border-color: var(--accent-color);
   box-shadow: none;
 }
@@ -496,7 +496,7 @@ ul {
   border-radius: 4px;
 }
 
-.modal-block__checkbox:checked + .modal-block__icon-white {
+.modal-block__checkbox--active:checked + .modal-block__icon-white {
   background-color: var(--accent-color);
   border-color: transparent;
   background-image: url(../images/icon-check.svg);

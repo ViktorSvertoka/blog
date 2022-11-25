@@ -92,7 +92,11 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button type="button" data-modal-close class="modal__button-close">
+            <button
+              type="button"
+              data-modal-close
+              class="modal__button-close modal__button-close--active"
+            >
               <svg class="modal__icon">
                 <use href="./images/icons.svg#icon-modal-x"></use>
               </svg>
@@ -102,9 +106,11 @@
               <ul class="modal-form__list">
                 <li class="modal-form__item">
                   <label class="modal-form__contacts">Ім'я</label>
-                  <div class="modal-form__field-name">
+                  <div
+                    class="modal-form__field-name modal-form__field-name--active"
+                  >
                     <input
-                      class="modal-form__type-field"
+                      class="modal-form__type-field modal-form__type-field--active"
                       type="text"
                       name="username"
                     />
@@ -115,9 +121,11 @@
                 </li>
                 <li class="modal-form__item">
                   <label class="modal-form__contacts">Телефон</label>
-                  <div class="modal-form__field-tel">
+                  <div
+                    class="modal-form__field-tel modal-form__field-tel--active"
+                  >
                     <input
-                      class="modal-form__type-field"
+                      class="modal-form__type-field modal-form__type-field--active"
                       type="tel"
                       name="phone-number"
                     />
@@ -128,9 +136,11 @@
                 </li>
                 <li class="modal-form__item">
                   <label class="modal-form__contacts">Пошта</label>
-                  <div class="modal-form__field-email">
+                  <div
+                    class="modal-form__field-email modal-form__field-email--active"
+                  >
                     <input
-                      class="modal-form__type-field"
+                      class="modal-form__type-field modal-form__type-field--active"
                       type="email"
                       name="email"
                     />
@@ -143,7 +153,7 @@
               <div class="modal-container">
                 <label class="modal-container__comment">Коментар</label>
                 <textarea
-                  class="modal-container__text"
+                  class="modal-container__text modal-container__text--active"
                   name="feedback"
                   rows=""
                   placeholder="Введіть текст"
@@ -151,7 +161,7 @@
               </div>
               <label class="modal-block">
                 <input
-                  class="modal-block__checkbox"
+                  class="modal-block__checkbox modal-block__checkbox--active"
                   type="checkbox"
                   name="mailing-list"
                   value="accept"
