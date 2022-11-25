@@ -847,7 +847,7 @@ ul {
   margin-bottom: 9px;
 }
 
-.address__item:last-child {
+.address__item--changing-properties:last-child {
   margin-bottom: 0;
 }
 
@@ -866,8 +866,8 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address__contact-link:hover,
-.address__contact-link:focus {
+.address__contact-link--active:hover,
+.address__contact-link--active:focus {
   color: var(--accent-color);
 }
 
@@ -911,8 +911,8 @@ ul {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join-in__link:hover,
-.join-in__link:focus {
+.join-in__link--active:hover,
+.join-in__link--active:focus {
   background: var(--accent-color);
   fill: var(--primary-white-color);
 }
@@ -995,8 +995,6 @@ ul {
 /* окончание футера */
 
 /* страница портфолио */
-
-/* хедер такой же как у стидии и футер тоже повторно не декорируем */
 
 /* <!--gallery web page filter--> */
 
