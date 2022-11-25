@@ -559,7 +559,7 @@ ul {
   margin-right: 30px;
 }
 
-.company__item:last-child {
+.company__item--changing-properties:last-child {
   margin-right: 0;
 }
 
