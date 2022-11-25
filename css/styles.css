@@ -288,8 +288,6 @@ ul {
   top: 0;
   background: rgba(47, 48, 58, 0.4);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* display: inline-flex;
-  flex-direction: column; */
 }
 
 .backdrop.is-hidden {
@@ -316,7 +314,7 @@ ul {
   padding: 40px;
 }
 
-.modal-button-close {
+.modal__button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -335,16 +333,16 @@ ul {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-close:hover {
+.modal__button-close:hover {
   fill: var(--accent-color);
 }
 
-.modal-icon {
+.modal__icon {
   width: 11px;
   height: 11px;
 }
 
-.modal-title {
+.modal__title {
   margin-top: 0;
   margin-bottom: 12px;
   text-align: center;
@@ -354,13 +352,13 @@ ul {
   color: var(--primary-text-color);
 }
 
-.modal-container {
+.modal-form__item {
   display: flex;
   flex-direction: column;
   margin-bottom: 28px;
 }
 
-.modal-contacts {
+.modal-form__contacts {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -368,7 +366,7 @@ ul {
   color: var(--title-text-color);
 }
 
-.modal-type-field {
+.modal-form__type-field {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -381,17 +379,17 @@ ul {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-type-field:focus {
+.modal-form__type-field:focus {
   border-color: var(--accent-color);
 }
 
-.field-name {
+.modal-form__field-name {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.modal-icon-name {
+.modal-form__icon-name {
   width: 12px;
   height: 12px;
   top: 50%;
@@ -400,18 +398,18 @@ ul {
   position: absolute;
 }
 
-.field-name:focus-within > .modal-icon-name {
+.modal-form__field-name:focus-within > .modal-form__icon-name {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.field-tel {
+.modal-form__field-tel {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.modal-icon-tel {
+.modal-form__icon-tel {
   width: 13px;
   height: 13px;
   top: 50%;
@@ -420,18 +418,18 @@ ul {
   position: absolute;
 }
 
-.field-tel:focus-within > .modal-icon-tel {
+.modal-form__field-tel:focus-within > .modal-form__icon-tel {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.field-email {
+.modal-form__field-email {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.modal-icon-email {
+.modal-form__icon-email {
   width: 15px;
   height: 12px;
   top: 50%;
@@ -440,12 +438,18 @@ ul {
   position: absolute;
 }
 
-.field-email:focus-within > .modal-icon-email {
+.modal-form__field-email:focus-within > .modal-form__icon-email {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.modal-comment {
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.modal-container__comment {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -453,7 +457,7 @@ ul {
   color: var(--title-text-color);
 }
 
-.modal-text {
+.modal-container__text {
   width: 448px;
   height: 120px;
   padding: 12px 16px;
@@ -464,18 +468,12 @@ ul {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-text:focus-within {
+.modal-container__text:focus-within {
   border-color: var(--accent-color);
   box-shadow: none;
 }
 
-.modal-container-comment {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.modal-link-accept {
+.modal-block {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -488,7 +486,7 @@ ul {
   height: 24px;
 }
 
-.modal-checkbox {
+.modal-block__checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -499,7 +497,7 @@ ul {
   overflow: hidden;
 }
 
-.modal-icon-white {
+.modal-block__icon-white {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -510,7 +508,7 @@ ul {
   border-radius: 4px;
 }
 
-.modal-checkbox:checked + .modal-icon-white {
+.modal-block__checkbox:checked + .modal-block__icon-white {
   background-color: var(--accent-color);
   border-color: transparent;
   background-image: url(../images/icon-check.svg);
@@ -519,7 +517,7 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-link-terms {
+.modal-block__link-terms {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -527,13 +525,13 @@ ul {
   margin-left: 2px;
 }
 
-.modal-container-btn {
+.modal-submit {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.modal-btn-submit {
+.modal-submit__button {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;

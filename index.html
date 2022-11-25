@@ -78,72 +78,76 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button type="button" data-modal-close class="modal-button-close">
-              <svg class="modal-icon">
+            <button type="button" data-modal-close class="modal__button-close">
+              <svg class="modal__icon">
                 <use href="./images/icons.svg#icon-modal-x"></use>
               </svg>
             </button>
-            <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
-            <form action="">
-              <ul>
-                <li class="modal-container">
-                  <label class="modal-contacts">Ім'я</label>
-                  <div class="field-name">
+            <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
+            <form class="modal-form" action="">
+              <ul class="modal-form__list">
+                <li class="modal-form__item">
+                  <label class="modal-form__contacts">Ім'я</label>
+                  <div class="modal-form__field-name">
                     <input
-                      class="modal-type-field"
+                      class="modal-form__type-field"
                       type="text"
                       name="username"
                     />
-                    <svg class="modal-icon-name">
+                    <svg class="modal-form__icon-name">
                       <use href="./images/icons.svg#icon-modal-face"></use>
                     </svg>
                   </div>
                 </li>
-                <li class="modal-container">
-                  <label class="modal-contacts">Телефон</label>
-                  <div class="field-tel">
+                <li class="modal-form__item">
+                  <label class="modal-form__contacts">Телефон</label>
+                  <div class="modal-form__field-tel">
                     <input
-                      class="modal-type-field"
+                      class="modal-form__type-field"
                       type="tel"
                       name="phone-number"
                     />
-                    <svg class="modal-icon-tel">
+                    <svg class="modal-form__icon-tel">
                       <use href="./images/icons.svg#icon-modal-phone"></use>
                     </svg>
                   </div>
                 </li>
-                <li class="modal-container">
-                  <label class="modal-contacts">Пошта</label>
-                  <div class="field-email">
-                    <input class="modal-type-field" type="email" name="email" />
-                    <svg class="modal-icon-email">
+                <li class="modal-form__item">
+                  <label class="modal-form__contacts">Пошта</label>
+                  <div class="modal-form__field-email">
+                    <input
+                      class="modal-form__type-field"
+                      type="email"
+                      name="email"
+                    />
+                    <svg class="modal-form__icon-email">
                       <use href="./images/icons.svg#icon-modal-mail"></use>
                     </svg>
                   </div>
                 </li>
               </ul>
-              <div class="modal-container-comment">
-                <label class="modal-comment">Коментар</label>
+              <div class="modal-container">
+                <label class="modal-container__comment">Коментар</label>
                 <textarea
-                  class="modal-text"
+                  class="modal-container__text"
                   name="feedback"
                   rows=""
                   placeholder="Введіть текст"
                 ></textarea>
               </div>
-              <label class="modal-link-accept">
+              <label class="modal-block">
                 <input
-                  class="modal-checkbox"
+                  class="modal-block__checkbox"
                   type="checkbox"
                   name="mailing-list"
                   value="accept"
                 />
-                <span class="modal-icon-white"></span>
+                <span class="modal-block__icon-white"></span>
                 Погоджуюся з розсилкою та приймаю
-                <a class="modal-link-terms" href="">Умови договору</a>
+                <a class="modal-block__link-terms" href="">Умови договору</a>
               </label>
-              <div class="modal-container-btn">
-                <button class="modal-btn-submit" type="submit">
+              <div class="modal-submit">
+                <button class="modal-submit__button" type="submit">
                   Відправити
                 </button>
               </div>
