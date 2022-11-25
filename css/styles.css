@@ -683,7 +683,7 @@ ul {
   margin-bottom: 50px;
 }
 
-.team-list {
+.team {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -691,7 +691,7 @@ ul {
   align-items: center;
 }
 
-.team-item {
+.team__item {
   width: 270px;
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -700,30 +700,30 @@ ul {
   background: var(--primary-white-color);
 }
 
-.team-item:last-child {
+.team__item:last-child {
   margin: 0;
 }
-.team-specialist {
+.team__specialist {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
-.team-text {
+.team__job-title {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--title-text-color);
 }
 
-.team-icons-box {
+.team__block {
   display: flex;
   justify-content: center;
   margin: 16px 32px 30px 32px;
 }
 
-.team-icons-button {
+.team__button {
   border: none;
   width: 44px;
   height: 44px;
@@ -739,13 +739,13 @@ ul {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icons-button:hover,
-.team-icons-button:focus {
+.team__button:hover,
+.team__button:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
 
-.team-icons {
+.team__icons {
   width: 20px;
   height: 20px;
 }
@@ -758,7 +758,7 @@ ul {
 .customers {
 }
 
-.customers-title {
+.customers__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -767,16 +767,20 @@ ul {
   margin-top: 0;
 }
 
-.customers-list {
+.customers__list {
   display: flex;
   align-items: center;
 }
 
-.customers-item {
+.customers__item {
   margin-right: 30px;
 }
 
-.customers-item-box {
+.customers__item:last-child {
+  margin: 0;
+}
+
+.customers__link {
   display: block;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -787,17 +791,13 @@ ul {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-item-box:hover,
-.customers-item-box:focus {
+.customers__link:hover,
+.customers__link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.customers-item:last-child {
-  margin: 0;
-}
-
-.customers-icon {
+.customers__icon {
   width: 106px;
   height: 60px;
   margin: 16px 32px;
