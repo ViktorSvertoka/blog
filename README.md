@@ -202,4 +202,4 @@ true, "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"] }
 
 ---
 
-sass переменние ($) sass sass
+sass переменные ($), sass амперсант (&)

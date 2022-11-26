@@ -181,14 +181,14 @@ ul {
 }
 
 .header-contacts__mail-icon {
-  width: 16px;
-  height: 12px;
+  /* width: 16px;
+  height: 12px; */
   margin-right: 10px;
 }
 
 .header-contacts__phone-icon {
-  width: 10px;
-  height: 16px;
+  /* width: 10px;
+  height: 16px; */
   margin-right: 10px;
 }
 
@@ -326,8 +326,8 @@ ul {
 }
 
 .modal__icon {
-  width: 11px;
-  height: 11px;
+  /* width: 11px;
+  height: 11px; */
 }
 
 .modal__title {
@@ -378,8 +378,8 @@ ul {
 }
 
 .modal-form__icon-name {
-  width: 12px;
-  height: 12px;
+  /* width: 12px;
+  height: 12px; */
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
@@ -398,8 +398,8 @@ ul {
 }
 
 .modal-form__icon-tel {
-  width: 13px;
-  height: 13px;
+  /* width: 13px;
+  height: 13px; */
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
@@ -418,8 +418,8 @@ ul {
 }
 
 .modal-form__icon-email {
-  width: 15px;
-  height: 12px;
+  /* width: 15px;
+  height: 12px; */
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
@@ -576,8 +576,8 @@ ul {
 }
 
 .company__icon {
-  width: 65.32px;
-  height: 70px;
+  /* width: 70px;
+  height: 70px; */
 }
 
 .company__title {
@@ -731,8 +731,8 @@ ul {
 }
 
 .team__icons {
-  width: 20px;
-  height: 20px;
+  /* width: 20px;
+  height: 20px; */
 }
 
 /* customers  */
@@ -777,8 +777,8 @@ ul {
 }
 
 .customers__icon {
-  width: 106px;
-  height: 60px;
+  /* width: 106px;
+  height: 60px; */
   margin: 16px 32px;
 }
 
@@ -922,8 +922,8 @@ ul {
   fill: var(--primary-white-color);
   margin: 0;
   padding: 0;
-  width: 20px;
-  height: 20px;
+  /* width: 20px;
+  height: 20px; */
 }
 
 /* підпишіться на розсилку */
@@ -987,8 +987,8 @@ ul {
 }
 
 .subscribe__icon {
-  width: 24px;
-  height: 24px;
+  /* width: 24px;
+  height: 24px; */
   margin-left: 10px;
 }
 
