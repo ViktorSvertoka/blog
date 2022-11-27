@@ -6,6 +6,11 @@
   --bg-color: #2f303a;
   --bg-color-white: #f5f4fa;
   --border-color-white: #ececec;
+  --border-color-secondary-white: #eeeeee;
+  --border-color-sand: #afb1b8;
+  --accent-text-color: #000000;
+  --primary-fonts: 'Roboto';
+  --accent-fonts: 'Raleway';
 }
 
 /* цвет основного текста - #212121; */
@@ -19,7 +24,7 @@
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -80,7 +85,7 @@ ul {
 }
 
 .header-logo__black-part {
-  color: #000000;
+  color: var(--accent-text-color);
   font-family: 'Raleway';
   text-decoration: none;
   font-size: 26px;
@@ -116,7 +121,7 @@ ul {
 .header-navigation__link {
   text-decoration: none;
   display: block;
-  color: #000000;
+  color: var(--accent-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   padding-top: 32px;
@@ -306,7 +311,7 @@ ul {
   position: absolute;
   top: 8px;
   right: 8px;
-  fill: #000000;
+  fill: var(--accent-text-color);
   width: 30px;
   height: 30px;
   display: flex;
@@ -688,6 +693,7 @@ ul {
 .team__item--changing-properties:last-child {
   margin: 0;
 }
+
 .team__specialist {
   font-weight: 500;
   font-size: 16px;
@@ -1120,7 +1126,7 @@ ul {
 
 .gallery__border {
   background-color: var(--primary-white-color);
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-color-secondary-white);
   padding: 20px 24px;
 }
 

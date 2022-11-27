@@ -1,0 +1,11 @@
+.header-section {
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 1px solid $bdr-color-white;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
