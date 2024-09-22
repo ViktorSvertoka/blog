@@ -17,6 +17,7 @@ import { structure } from "./src/sanity/structure";
 import { locate } from "@/sanity/presentation/locate";
 
 export default defineConfig({
+  title: "Blog",
   basePath: "/admin",
   projectId,
   dataset,
