@@ -10,7 +10,7 @@ import { dataset, projectId } from "../sanity/env";
 const builder = imageUrlBuilder({ projectId, dataset });
 
 export default function Post({ post }: { post: SanityDocument }) {
-  const { title, mainImage, body } = post;
+  const { title = "Untitled", mainImage, body } = post || {};
 
   return (
     <main className="container mx-auto prose prose-lg p-4">
