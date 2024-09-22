@@ -1,5 +1,6 @@
 // ./src/components/Post.tsx
 
+import Link from "next/link";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
 import imageUrlBuilder from "@sanity/image-url";
@@ -14,6 +15,9 @@ export default function Post({ post }: { post: SanityDocument }) {
 
   return (
     <main className="container mx-auto prose prose-lg p-4">
+      <Link href="/" className="text-blue-500 underline">
+        ← Back to Posts
+      </Link>
       {title ? <h1>{title}</h1> : null}
       {mainImage ? (
         <Image
