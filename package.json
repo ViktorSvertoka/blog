@@ -1,0 +1,36 @@
+{
+  "name": "blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sanity/client": "^6.21.3",
+    "@sanity/icons": "^3.4.0",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/react-loader": "^1.10.7",
+    "@sanity/vision": "^3.57.4",
+    "@sanity/visual-editing": "^2.1.10",
+    "next": "14.2.13",
+    "next-sanity": "^9.5.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "sanity": "^3.57.4",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.13",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
